@@ -50,6 +50,12 @@ body {
     justify-content: center;
 }
 
+.carrusel img {
+    max-width: 100%;
+    height: auto;
+
+}
+
 
 .lmv { 
     padding-top: 35px;
@@ -160,8 +166,108 @@ padding-right: 15px;
 
 /*PRODUCTS*/
 
-
+/*AJUSTAR VISTA DE LAS TARJETAS FEMENINO DEPENDIENDO DE ANCHURA*/
 /*FEMENINO*/
+
+@media only screen and (max-width: 706px){
+    .women { 
+        padding-top: 35px;
+        padding-bottom: 35px;
+        background-color: #2b568a;
+        font-family: 'Roboto Slab', serif;
+        text-align: center;
+        color: white;
+    }
+    .women h2{
+        text-size-adjust: 200%;
+        padding:35px;
+    }
+    
+    .card{
+        display: inline-block;
+        max-width: 650px;
+        height: auto;
+        margin: 10px 5px;
+        box-shadow: 0 15px 35px rgba(0, 0, 0, 0.5);
+        border-radius: 7px 7px 7px 7px;
+        align-items: center;
+        background-color: white;
+    }
+    .card img {
+        float: center;
+        height: 420px;
+        width: 320px;
+        border-radius: 7px 7px 7px 7px;
+      }
+    
+      .card__info {
+        float: center;
+        height: auto;
+        width: 327px;
+        border-radius: 7px 7px 10px 7px;
+        background-color: #ffffff;
+        color: black;  
+      }
+    
+      .card__info h3 {
+        margin: 0 10px 0 10px;
+        padding-top: 15px;
+        font-size: 30px;
+        color: #474747;
+    }
+    
+    .card__info p {
+        height: auto;
+        margin: 0 10px 0 10px;
+        font-family:sans-serif, serif;
+        color: #8d8d8d;
+        font-size: 15px;
+        font-weight: lighter;
+        overflow: hidden;
+      }
+    
+    span {
+        display: inline-block;
+        height: 50px;
+        font-family: 'Suranna', serif;
+        font-size: 34px;
+      }
+    
+      .btnbuy {
+        height: 103px;
+        width: 327px;
+        margin-top: 1px;
+        position: center;
+      }
+      
+      span {
+        display: inline-block;
+        height: 50px;
+        font-family: 'Suranna', serif;
+        font-size: 34px;
+      }
+      
+      .btnbuy button {
+        float: none;
+        display: inline-block;
+        height: 50px;
+        width: 176px;
+        margin: 0 40px 0 16px;
+        box-sizing: border-box;
+        border: transparent;
+        border-radius: 60px;
+        font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        font-size: 16px;
+        font-weight: 900;
+        text-transform: uppercase;
+        letter-spacing: 0.2em;
+        color: #ffffff;
+        background-color: #311bf7;
+      }
+
+}
+
+@media only screen and (min-width: 707px) {
 
 .women { 
     padding-top: 35px;
@@ -178,8 +284,8 @@ padding-right: 15px;
 
 .card{
     display: inline-block;
-    height: 420px;
-    width: 654px;
+    max-width: 650px;
+    height: auto;
     margin: 50px 30px;
 	box-shadow: 0 15px 35px rgba(0, 0, 0, 0.5);
     border-radius: 7px 7px 7px 7px;
@@ -190,14 +296,14 @@ padding-right: 15px;
     float: left;
     height: 420px;
     width: 320px;
-    border-radius: 7px 0 0 7px;
+    border-radius: 7px 7px 7px 7px;
   }
 
   .card__info {
     float: left;
     height: 420px;
     width: 327px;
-    border-radius: 07 7px 10px 7px;
+    border-radius: 7px 7px 10px 7px;
     background-color: #ffffff;
     color: black;  
   }
@@ -257,11 +363,107 @@ span {
     color: #ffffff;
     background-color: #311bf7;
   }
-
+  }
 
   /*MASCULINO*/
-
-  .men { 
+  @media only screen and (max-width: 705px) {
+    .men { 
+        padding-top: 35px;
+        padding-bottom: 35px;
+        background-color: #2b568a;
+        font-family: 'Roboto Slab', serif;
+        text-align: center;
+        color: white;
+    }
+    .men h2{
+        text-size-adjust: 200%;
+        padding:35px;
+    }
+    
+    .mcard{
+        display: inline-block;
+        margin: 10px 5px;
+        max-width: 650px;
+        height: auto;
+        box-shadow: 0 15px 35px rgba(0, 0, 0, 0.5);
+        border-radius: 7px 7px 7px 7px;
+        align-items: center;
+        background-color: lightgray;
+    }
+    .mcard img {
+        float: center;
+        height: 420px;
+        width: 320px;
+        border-radius: 7px 7px 7px 7px;
+      }
+    
+      .mcard__info {
+        float: center;
+        height: auto;
+        width: 327px;
+        border-radius: 7px 7px 10px 7px;
+        background-color:lightgray;
+        color: black;  
+      }
+    
+      .mcard__info h3 {
+        margin: 0 12px 0 12px;
+        padding-top: 10px;
+        font-size: 30px;
+        color: #474747;
+    }
+    
+    .mcard__info p {
+        height: auto;
+        margin: 5px 11px 5px 11px;
+        font-family:sans-serif, serif;
+        color: #8d8d8d;
+        font-size: 16px;
+        font-weight: lighter;
+        overflow: hidden;
+      }
+    span {
+        display: inline-block;
+        height: 50px;
+        font-family: 'Suranna', serif;
+        font-size: 34px;
+      }
+    
+      .btnbuy {
+        height: 103px;
+        width: 327px;
+        margin-top: 1px;
+        position: center;
+      }
+      
+      span {
+        display: inline-block;
+        height: 50px;
+        font-family: 'Suranna', serif;
+        font-size: 34px;
+      }
+      
+      .mbtnbuy button {
+        float: none;
+        display: inline-block;
+        height: 50px;
+        width: 176px;
+        margin: 0 30px 0 18px;
+        box-sizing: border-box;
+        border: transparent;
+        border-radius: 70px;
+        font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        font-size: 16px;
+        font-weight: 900;
+        text-transform: uppercase;
+        letter-spacing: 0.2em;
+        color: #ffffff;
+        background-color: #1512b4;
+      }
+    }
+  
+  @media only screen and (min-width: 706px) {
+    .men { 
     padding-top: 35px;
     padding-bottom: 35px;
     background-color: #2b568a;
@@ -355,6 +557,739 @@ span {
     background-color: #1512b4;
   }
 
+}
+ 
+
+
+/*INFANTIL GRID */
+@media only screen and (min-width: 835px){
+    .kidsgrid {
+        display: grid; 
+        grid-auto-columns: 1fr; 
+        grid-auto-rows: 1fr; 
+        grid-template-columns: 1fr 1fr; 
+        grid-template-rows: 0.05fr 1fr 1fr; 
+        gap: 0px 0px; 
+        grid-template-areas: 
+        "infantil infantil"
+        "card1 card2"
+        "card3 card4";
+        justify-items: center;
+                }
+
+  .infantil { grid-area: infantil; }
+  .card2 { grid-area: card2; }
+  .card3 { grid-area: card3; }
+  .card4 { grid-area: card4; }
+  .card1 { grid-area: card1; }
+
+.infantil {
+    font-family: 'Roboto Slab', serif;
+    font-weight: 900;
+    text-transform: uppercase;
+    color: #ffffff;
+    text-size-adjust: 400%;
+    padding:35px;
+    text-align: center;
+}
+
+  .card1{
+    display:grid;
+    max-width: 650px;
+    height: 750px;
+    width: auto;
+    margin: 50px 30px;
+	box-shadow: 0 15px 35px rgba(0, 0, 0, 0.5);
+    border-radius: 7px 7px 7px 7px;
+    background-color: white;
+    justify-items: center;
+}
+.card1 img{
+    height: auto;
+    max-width: 350px;
+    border-radius: 7px 7px 7px 7px;  
+    align-self: center;
+  }
+
+  .card1__info {
+    height: auto;
+    max-width: 340px;;
+    border-radius: 7px 7px 10px 7px;
+    background-color: #ffffff;
+    color: black;  
+  }
+
+  .card1__info h3 {
+    margin: 0 0 0 10px;
+    padding-top: 10px;
+    font-size: 35px;
+    color: #474747;
+}
+
+.card1__info p {
+    height: auto;
+    margin: 10px 20px 10px 25px;
+    font-family:sans-serif, serif;
+    color: #8d8d8d;
+    font-size: 15px;
+    font-weight: lighter;
+    overflow: hidden;
+    align-self: center;
+  }
+
+span {
+    align-self: center;
+    height: 50px;
+    font-family: 'Suranna', serif;
+    font-size: 34px;
+  }
+
+  .btnbuy1 {
+    height: 103px;
+    width: 327px;
+    margin-top: 1px;
+    position: relative;
+    align-self: center;
+  }
+  
+  span {
+    display: inline-block;
+    height: 50px;
+    font-family: 'Suranna', serif;
+    font-size: 34px;
+  }
+  
+  .btnbuy1 button {
+    float: right;
+    display: inline-block;
+    height: 50px;
+    width: 176px;
+    margin: 0 40px 0 16px;
+    box-sizing: border-box;
+    border: transparent;
+    border-radius: 60px;
+    font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 16px;
+    font-weight: 900;
+    text-transform: uppercase;
+    letter-spacing: 0.2em;
+    color: #ffffff;
+    background-color: #311bf7;
+  }
+
+  .card2{
+    display:grid;
+    max-width: 650px;
+    height: auto;
+    margin: 50px 30px;
+	box-shadow: 0 15px 35px rgba(0, 0, 0, 0.5);
+    border-radius: 7px 7px 7px 7px;
+    background-color: white;
+    justify-items: center;
+}
+.card2 img{
+    height: auto;
+    max-width: 350px;
+    border-radius: 7px 7px 7px 7px;  
+    align-self: center;
+  }
+
+  .card2__info {
+    height: auto;
+    max-width: 340px;;
+    border-radius: 7px 7px 10px 7px;
+    background-color: #ffffff;
+    color: black;  
+  }
+
+  .card2__info h3 {
+    margin: 0 0 0 10px;
+    padding-top: 10px;
+    font-size: 35px;
+    color: #474747;
+}
+
+.card2__info p {
+    height: auto;
+    margin: 10px 20px 10px 25px;
+    font-family:sans-serif, serif;
+    color: #8d8d8d;
+    font-size: 15px;
+    font-weight: lighter;
+    overflow: hidden;
+    align-self: center;
+  }
+
+span {
+    align-self: center;
+    height: 50px;
+    font-family: 'Suranna', serif;
+    font-size: 34px;
+  }
+
+  .btnbuy2 {
+    height: 103px;
+    width: 327px;
+    margin-top: 1px;
+    position: relative;
+    align-self: center;
+  }
+  
+  span {
+    display: inline-block;
+    height: 50px;
+    font-family: 'Suranna', serif;
+    font-size: 34px;
+  }
+  
+  .btnbuy2 button {
+    float: right;
+    display: inline-block;
+    height: 50px;
+    width: 176px;
+    margin: 0 40px 0 16px;
+    box-sizing: border-box;
+    border: transparent;
+    border-radius: 60px;
+    font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 16px;
+    font-weight: 900;
+    text-transform: uppercase;
+    letter-spacing: 0.2em;
+    color: #ffffff;
+    background-color: #311bf7;
+  }
+
+  .card3{
+    display:grid;
+    max-width: 650px;
+    height: auto;
+    margin: 50px 30px;
+	box-shadow: 0 15px 35px rgba(0, 0, 0, 0.5);
+    border-radius: 7px 7px 7px 7px;
+    background-color: white;
+    justify-items: center;
+}
+.card3 img{
+    height: auto;
+    max-width: 350px;
+    border-radius: 7px 7px 7px 7px;  
+    align-self: center;
+  }
+
+  .card3__info {
+    height: auto;
+    max-width: 340px;;
+    border-radius: 7px 7px 10px 7px;
+    background-color: #ffffff;
+    color: black;  
+  }
+
+  .card3__info h3 {
+    margin: 0 0 0 10px;
+    padding-top: 10px;
+    font-size: 35px;
+    color: #474747;
+}
+
+.card3__info p {
+    height: auto;
+    margin: 10px 20px 10px 25px;
+    font-family:sans-serif, serif;
+    color: #8d8d8d;
+    font-size: 15px;
+    font-weight: lighter;
+    overflow: hidden;
+    align-self: center;
+  }
+
+span {
+    align-self: center;
+    height: 50px;
+    font-family: 'Suranna', serif;
+    font-size: 34px;
+  }
+
+  .btnbuy3 {
+    height: 103px;
+    width: 327px;
+    margin-top: 1px;
+    position: relative;
+    align-self: center;
+  }
+  
+  span {
+    display: inline-block;
+    height: 50px;
+    font-family: 'Suranna', serif;
+    font-size: 34px;
+  }
+  
+  .btnbuy3 button {
+    float: right;
+    display: inline-block;
+    height: 50px;
+    width: 176px;
+    margin: 0 40px 0 16px;
+    box-sizing: border-box;
+    border: transparent;
+    border-radius: 60px;
+    font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 16px;
+    font-weight: 900;
+    text-transform: uppercase;
+    letter-spacing: 0.2em;
+    color: #ffffff;
+    background-color: #311bf7;
+  }
+
+  .card4{
+    display:grid;
+    max-width: 650px;
+    height: auto;
+    margin: 50px 30px;
+	box-shadow: 0 15px 35px rgba(0, 0, 0, 0.5);
+    border-radius: 7px 7px 7px 7px;
+    background-color: white;
+    justify-items: center;
+}
+.card4 img{
+    height: auto;
+    max-width: 350px;
+    border-radius: 7px 7px 7px 7px;  
+    align-self: center;
+  }
+
+  .card4__info {
+    height: auto;
+    max-width: 340px;;
+    border-radius: 7px 7px 10px 7px;
+    background-color: #ffffff;
+    color: black;  
+  }
+
+  .card4__info h3 {
+    margin: 0 0 0 10px;
+    padding-top: 10px;
+    font-size: 35px;
+    color: #474747;
+}
+
+.card4__info p {
+    height: auto;
+    margin: 10px 20px 10px 25px;
+    font-family:sans-serif, serif;
+    color: #8d8d8d;
+    font-size: 15px;
+    font-weight: lighter;
+    overflow: hidden;
+    align-self: center;
+  }
+
+span {
+    align-self: center;
+    height: 50px;
+    font-family: 'Suranna', serif;
+    font-size: 34px;
+  }
+
+  .btnbuy4 {
+    height: 103px;
+    width: 327px;
+    margin-top: 1px;
+    position: relative;
+    align-self: center;
+  }
+  
+  span {
+    display: inline-block;
+    height: 50px;
+    font-family: 'Suranna', serif;
+    font-size: 34px;
+  }
+  
+  .btnbuy4 button {
+    float: right;
+    display: inline-block;
+    height: 50px;
+    width: 176px;
+    margin: 0 40px 0 16px;
+    box-sizing: border-box;
+    border: transparent;
+    border-radius: 60px;
+    font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 16px;
+    font-weight: 900;
+    text-transform: uppercase;
+    letter-spacing: 0.2em;
+    color: #ffffff;
+    background-color: #311bf7;
+  }
+
+}
+  
+  @media only screen and (max-width: 834px){
+    .kidsgrid {
+        display: grid; 
+        grid-auto-columns: 1fr; 
+        grid-auto-rows: 1fr; 
+        grid-template-columns: 1fr; 
+        grid-template-rows: 0.3fr 1fr 1fr 1fr 1fr; 
+        gap: 0px 0px; 
+        grid-template-areas: 
+          "infantil"
+          "card1"
+          "card2"
+          "card3"
+          "card4"; 
+      }
+      .infantil { grid-area: infantil; }
+      .card1 { grid-area: card1; }
+      .card2 { grid-area: card2; }
+      .card3 { grid-area: card3; }
+      .card4 { grid-area: card4; }
+
+      .card1{
+        display:grid;
+        max-width: 650px;
+        height: 750px;
+        margin: 50px 30px;
+        box-shadow: 0 15px 35px rgba(0, 0, 0, 0.5);
+        border-radius: 7px 7px 7px 7px;
+        background-color: white;
+        justify-items: center;
+    }
+    .card1 img{
+        height: auto;
+        max-width: 350px;
+        border-radius: 7px 7px 7px 7px;  
+        align-self: center;
+      }
+    
+      .card1__info {
+        height: auto;
+        max-width: 340px;;
+        border-radius: 7px 7px 10px 7px;
+        background-color: #ffffff;
+        color: black;  
+      }
+    
+      .card1__info h3 {
+        margin: 0 0 0 10px;
+        padding-top: 10px;
+        font-size: 35px;
+        color: #474747;
+    }
+    
+    .card1__info p {
+        height: auto;
+        margin: 10px 20px 10px 25px;
+        font-family:sans-serif, serif;
+        color: #8d8d8d;
+        font-size: 15px;
+        font-weight: lighter;
+        overflow: hidden;
+        align-self: center;
+      }
+    
+    span {
+        align-self: center;
+        height: 50px;
+        font-family: 'Suranna', serif;
+        font-size: 34px;
+      }
+    
+      .btnbuy1 {
+        height: 103px;
+        width: 327px;
+        margin-top: 1px;
+        position: relative;
+        align-self: center;
+      }
+      
+      span {
+        display: inline-block;
+        height: 50px;
+        font-family: 'Suranna', serif;
+        font-size: 34px;
+      }
+      
+      .btnbuy1 button {
+        float: right;
+        display: inline-block;
+        height: 50px;
+        width: 176px;
+        margin: 0 40px 0 16px;
+        box-sizing: border-box;
+        border: transparent;
+        border-radius: 60px;
+        font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        font-size: 16px;
+        font-weight: 900;
+        text-transform: uppercase;
+        letter-spacing: 0.2em;
+        color: #ffffff;
+        background-color: #311bf7;
+      }
+    
+      .card2{
+        display:grid;
+        max-width: 650px;
+        height: auto;
+        margin: 50px 30px;
+        box-shadow: 0 15px 35px rgba(0, 0, 0, 0.5);
+        border-radius: 7px 7px 7px 7px;
+        background-color: white;
+        justify-items: center;
+    }
+    .card2 img{
+        height: auto;
+        max-width: 350px;
+        border-radius: 7px 7px 7px 7px;  
+        align-self: center;
+      }
+    
+      .card2__info {
+        height: auto;
+        max-width: 340px;;
+        border-radius: 7px 7px 10px 7px;
+        background-color: #ffffff;
+        color: black;  
+      }
+    
+      .card2__info h3 {
+        margin: 0 0 0 10px;
+        padding-top: 10px;
+        font-size: 35px;
+        color: #474747;
+    }
+    
+    .card2__info p {
+        height: auto;
+        margin: 10px 20px 10px 25px;
+        font-family:sans-serif, serif;
+        color: #8d8d8d;
+        font-size: 15px;
+        font-weight: lighter;
+        overflow: hidden;
+        align-self: center;
+      }
+    
+    span {
+        align-self: center;
+        height: 50px;
+        font-family: 'Suranna', serif;
+        font-size: 34px;
+      }
+    
+      .btnbuy2 {
+        height: 103px;
+        width: 327px;
+        margin-top: 1px;
+        position: relative;
+        align-self: center;
+      }
+      
+      span {
+        display: inline-block;
+        height: 50px;
+        font-family: 'Suranna', serif;
+        font-size: 34px;
+      }
+      
+      .btnbuy2 button {
+        float: right;
+        display: inline-block;
+        height: 50px;
+        width: 176px;
+        margin: 0 40px 0 16px;
+        box-sizing: border-box;
+        border: transparent;
+        border-radius: 60px;
+        font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        font-size: 16px;
+        font-weight: 900;
+        text-transform: uppercase;
+        letter-spacing: 0.2em;
+        color: #ffffff;
+        background-color: #311bf7;
+      }
+    
+      .card3{
+        display:grid;
+        max-width: 650px;
+        height: auto;
+        margin: 50px 30px;
+        box-shadow: 0 15px 35px rgba(0, 0, 0, 0.5);
+        border-radius: 7px 7px 7px 7px;
+        background-color: white;
+        justify-items: center;
+    }
+    .card3 img{
+        height: auto;
+        max-width: 350px;
+        border-radius: 7px 7px 7px 7px;  
+        align-self: center;
+      }
+    
+      .card3__info {
+        height: auto;
+        max-width: 340px;;
+        border-radius: 7px 7px 10px 7px;
+        background-color: #ffffff;
+        color: black;  
+      }
+    
+      .card3__info h3 {
+        margin: 0 0 0 10px;
+        padding-top: 10px;
+        font-size: 35px;
+        color: #474747;
+    }
+    
+    .card3__info p {
+        height: auto;
+        margin: 10px 20px 10px 25px;
+        font-family:sans-serif, serif;
+        color: #8d8d8d;
+        font-size: 15px;
+        font-weight: lighter;
+        overflow: hidden;
+        align-self: center;
+      }
+    
+    span {
+        align-self: center;
+        height: 50px;
+        font-family: 'Suranna', serif;
+        font-size: 34px;
+      }
+    
+      .btnbuy3 {
+        height: 103px;
+        width: 327px;
+        margin-top: 1px;
+        position: relative;
+        align-self: center;
+      }
+      
+      span {
+        display: inline-block;
+        height: 50px;
+        font-family: 'Suranna', serif;
+        font-size: 34px;
+      }
+      
+      .btnbuy3 button {
+        float: right;
+        display: inline-block;
+        height: 50px;
+        width: 176px;
+        margin: 0 40px 0 16px;
+        box-sizing: border-box;
+        border: transparent;
+        border-radius: 60px;
+        font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        font-size: 16px;
+        font-weight: 900;
+        text-transform: uppercase;
+        letter-spacing: 0.2em;
+        color: #ffffff;
+        background-color: #311bf7;
+      }
+    
+      .card4{
+        display:grid;
+        max-width: 650px;
+        height: auto;
+        margin: 50px 30px;
+        box-shadow: 0 15px 35px rgba(0, 0, 0, 0.5);
+        border-radius: 7px 7px 7px 7px;
+        background-color: white;
+        justify-items: center;
+    }
+    .card4 img{
+        height: auto;
+        max-width: 350px;
+        border-radius: 7px 7px 7px 7px;  
+        align-self: center;
+      }
+    
+      .card4__info {
+        height: auto;
+        max-width: 340px;;
+        border-radius: 7px 7px 10px 7px;
+        background-color: #ffffff;
+        color: black;  
+      }
+    
+      .card4__info h3 {
+        margin: 0 0 0 10px;
+        padding-top: 10px;
+        font-size: 35px;
+        color: #474747;
+    }
+    
+    .card4__info p {
+        height: auto;
+        margin: 10px 20px 10px 25px;
+        font-family:sans-serif, serif;
+        color: #8d8d8d;
+        font-size: 15px;
+        font-weight: lighter;
+        overflow: hidden;
+        align-self: center;
+      }
+    
+    span {
+        align-self: center;
+        height: 50px;
+        font-family: 'Suranna', serif;
+        font-size: 34px;
+      }
+    
+      .btnbuy4 {
+        height: 103px;
+        width: 327px;
+        margin-top: 1px;
+        position: relative;
+        align-self: center;
+      }
+      
+      span {
+        display: inline-block;
+        height: 50px;
+        font-family: 'Suranna', serif;
+        font-size: 34px;
+      }
+      
+      .btnbuy4 button {
+        float: right;
+        display: inline-block;
+        height: 50px;
+        width: 176px;
+        margin: 0 40px 0 16px;
+        box-sizing: border-box;
+        border: transparent;
+        border-radius: 60px;
+        font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        font-size: 16px;
+        font-weight: 900;
+        text-transform: uppercase;
+        letter-spacing: 0.2em;
+        color: #ffffff;
+        background-color: #311bf7;
+      }  
+      .infantil {
+        font-family: 'Roboto Slab', serif;
+        font-weight: 900;
+        text-transform: uppercase;
+        color: #ffffff;
+        text-size-adjust: 400%;
+        padding:35px;
+        text-align: center;
+    }
+}
 
     /*ENCUENTRANOS*/
 
