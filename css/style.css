@@ -230,7 +230,23 @@ padding-right: 15px;
         border-radius: 7px 7px 7px 7px;
         align-items: center;
         background-color: white;
+        transition: .5s ease;
     }
+
+    .card:hover{
+        box-shadow:
+        1px 1px #373737,
+        2px 2px #373737,
+        3px 3px #373737,
+        4px 4px #373737,
+        5px 5px #373737,
+        6px 6px #373737;
+        -webkit-transform: translateX(-50px) scale(1.05) ;
+        transform: translateX(-10px) scale(1.05);
+        transition: .5s ease;
+        }
+
+
     .card img {
         float: center;
         height: 420px;
@@ -329,7 +345,23 @@ padding-right: 15px;
     border-radius: 7px 7px 7px 7px;
 	align-items: center;
     background-color: white;
+    transition: .5s ease;   
 }
+
+.card:hover{
+    box-shadow:
+    1px 1px #373737,
+    2px 2px #373737,
+    3px 3px #373737,
+    4px 4px #373737,
+    5px 5px #373737,
+    6px 6px #373737;
+    -webkit-transform: translateX(-50px) scale(1.05) ;
+    transform: translateX(-10px) scale(1.05);
+    transition: .5s ease;
+
+    }
+
 .card img {
     float: left;
     height: 420px;
@@ -437,7 +469,20 @@ span {
         border-radius: 7px 7px 7px 7px;
         align-items: center;
         background-color: lightgray;
+        -webkit-filter: brightness(95%);
+        -webkit-transition: all 1s ease;
+        -moz-transition: all 1s ease;
+        -o-transition: all 1s ease;
+        -ms-transition: all 1s ease;
+        transition: all 1s ease;
+        filter: brightness(95%);
     }
+        .mcard:hover {
+            -webkit-filter: brightness(105%);
+            filter: brightness(105%);
+            }
+
+   
     .mcard img {
         float: center;
         height: 420px;
@@ -533,7 +578,19 @@ span {
     border-radius: 7px 7px 7px 7px;
 	align-items: center;
     background-color: lightgray;
+    -webkit-filter: brightness(95%);
+    -webkit-transition: all 1s ease;
+    -moz-transition: all 1s ease;
+    -o-transition: all 1s ease;
+    -ms-transition: all 1s ease;
+    transition: all 1s ease;
+    filter: brightness(95%);
 }
+    .mcard:hover {
+        -webkit-filter: brightness(105%);
+        filter: brightness(105%);
+        }
+
 .mcard img {
     float: right;
     height: 420px;
@@ -663,7 +720,17 @@ span {
     border-radius: 7px 7px 7px 7px;
     background-color: white;
     justify-items: center;
+    transition: 1s ease;
 }
+
+.card1:hover,.card2:hover,.card3:hover,.card4:hover {
+    -webkit-transform: rotateZ(-4deg)scale(1.2);
+    -ms-transform: rotateZ(-4deg)scale(1.2);
+    transform: rotateZ(-4deg)scale(1.2);
+    transition: 1s ease;
+
+}
+
 .card1 img,.card2 img,.card3 img,.card4 img{
     height: auto;
     max-width: 350px;
@@ -760,7 +827,7 @@ span {
       .card3 { grid-area: card3; }
       .card4 { grid-area: card4; }
 
-      .card1{
+      .card1,.card2,.card3,.card4{
         display:grid;
         max-width: 650px;
         height: 750px;
@@ -770,14 +837,14 @@ span {
         background-color: white;
         justify-items: center;
     }
-    .card1 img{
+    .card1 img,.card2 img,.card3 img,.card4 img{
         height: auto;
         max-width: 350px;
         border-radius: 7px 7px 7px 7px;  
         align-self: center;
       }
     
-      .card1__info {
+      .card1__info,.card2__info,.card3__info,.card4__info {
         height: auto;
         max-width: 340px;;
         border-radius: 7px 7px 10px 7px;
@@ -785,14 +852,14 @@ span {
         color: black;  
       }
     
-      .card1__info h3 {
+      .card1__info h3,.card2__info h3,.card3__info h3,.card4__info h3 {
         margin: 0 0 0 10px;
         padding-top: 10px;
         font-size: 35px;
         color: #474747;
     }
     
-    .card1__info p {
+    .card1__info p,.card2__info p,.card3__info p,.card4__info p{
         height: auto;
         margin: 10px 20px 10px 25px;
         font-family:sans-serif, serif;
@@ -810,7 +877,7 @@ span {
         font-size: 34px;
       }
     
-      .btnbuy1 {
+      .btnbuy1,.btnbuy2,.btnbuy3,.btnbuy4 {
         height: 103px;
         width: 327px;
         margin-top: 1px;
@@ -825,7 +892,7 @@ span {
         font-size: 34px;
       }
       
-      .btnbuy1 button {
+      .btnbuy1 button,.btnbuy2 button,.btnbuy3 button,.btnbuy4 button {
         float: right;
         display: inline-block;
         height: 50px;
@@ -842,255 +909,7 @@ span {
         color: #ffffff;
         background-color: #311bf7;
       }
-    
-      .card2{
-        display:grid;
-        max-width: 650px;
-        height: auto;
-        margin: 50px 30px;
-        box-shadow: 0 15px 35px rgba(0, 0, 0, 0.5);
-        border-radius: 7px 7px 7px 7px;
-        background-color: white;
-        justify-items: center;
-    }
-    .card2 img{
-        height: auto;
-        max-width: 350px;
-        border-radius: 7px 7px 7px 7px;  
-        align-self: center;
-      }
-    
-      .card2__info {
-        height: auto;
-        max-width: 340px;;
-        border-radius: 7px 7px 10px 7px;
-        background-color: #ffffff;
-        color: black;  
-      }
-    
-      .card2__info h3 {
-        margin: 0 0 0 10px;
-        padding-top: 10px;
-        font-size: 35px;
-        color: #474747;
-    }
-    
-    .card2__info p {
-        height: auto;
-        margin: 10px 20px 10px 25px;
-        font-family:sans-serif, serif;
-        color: #8d8d8d;
-        font-size: 15px;
-        font-weight: lighter;
-        overflow: hidden;
-        align-self: center;
-      }
-    
-    span {
-        align-self: center;
-        height: 50px;
-        font-family: 'Suranna', serif;
-        font-size: 34px;
-      }
-    
-      .btnbuy2 {
-        height: 103px;
-        width: 327px;
-        margin-top: 1px;
-        position: relative;
-        align-self: center;
-      }
       
-      span {
-        display: inline-block;
-        height: 50px;
-        font-family: 'Suranna', serif;
-        font-size: 34px;
-      }
-      
-      .btnbuy2 button {
-        float: right;
-        display: inline-block;
-        height: 50px;
-        width: 176px;
-        margin: 0 40px 0 16px;
-        box-sizing: border-box;
-        border: transparent;
-        border-radius: 60px;
-        font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-        font-size: 16px;
-        font-weight: 900;
-        text-transform: uppercase;
-        letter-spacing: 0.2em;
-        color: #ffffff;
-        background-color: #311bf7;
-      }
-    
-      .card3{
-        display:grid;
-        max-width: 650px;
-        height: auto;
-        margin: 50px 30px;
-        box-shadow: 0 15px 35px rgba(0, 0, 0, 0.5);
-        border-radius: 7px 7px 7px 7px;
-        background-color: white;
-        justify-items: center;
-    }
-    .card3 img{
-        height: auto;
-        max-width: 350px;
-        border-radius: 7px 7px 7px 7px;  
-        align-self: center;
-      }
-    
-      .card3__info {
-        height: auto;
-        max-width: 340px;;
-        border-radius: 7px 7px 10px 7px;
-        background-color: #ffffff;
-        color: black;  
-      }
-    
-      .card3__info h3 {
-        margin: 0 0 0 10px;
-        padding-top: 10px;
-        font-size: 35px;
-        color: #474747;
-    }
-    
-    .card3__info p {
-        height: auto;
-        margin: 10px 20px 10px 25px;
-        font-family:sans-serif, serif;
-        color: #8d8d8d;
-        font-size: 15px;
-        font-weight: lighter;
-        overflow: hidden;
-        align-self: center;
-      }
-    
-    span {
-        align-self: center;
-        height: 50px;
-        font-family: 'Suranna', serif;
-        font-size: 34px;
-      }
-    
-      .btnbuy3 {
-        height: 103px;
-        width: 327px;
-        margin-top: 1px;
-        position: relative;
-        align-self: center;
-      }
-      
-      span {
-        display: inline-block;
-        height: 50px;
-        font-family: 'Suranna', serif;
-        font-size: 34px;
-      }
-      
-      .btnbuy3 button {
-        float: right;
-        display: inline-block;
-        height: 50px;
-        width: 176px;
-        margin: 0 40px 0 16px;
-        box-sizing: border-box;
-        border: transparent;
-        border-radius: 60px;
-        font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-        font-size: 16px;
-        font-weight: 900;
-        text-transform: uppercase;
-        letter-spacing: 0.2em;
-        color: #ffffff;
-        background-color: #311bf7;
-      }
-    
-      .card4{
-        display:grid;
-        max-width: 650px;
-        height: auto;
-        margin: 50px 30px;
-        box-shadow: 0 15px 35px rgba(0, 0, 0, 0.5);
-        border-radius: 7px 7px 7px 7px;
-        background-color: white;
-        justify-items: center;
-    }
-    .card4 img{
-        height: auto;
-        max-width: 350px;
-        border-radius: 7px 7px 7px 7px;  
-        align-self: center;
-      }
-    
-      .card4__info {
-        height: auto;
-        max-width: 340px;;
-        border-radius: 7px 7px 10px 7px;
-        background-color: #ffffff;
-        color: black;  
-      }
-    
-      .card4__info h3 {
-        margin: 0 0 0 10px;
-        padding-top: 10px;
-        font-size: 35px;
-        color: #474747;
-    }
-    
-    .card4__info p {
-        height: auto;
-        margin: 10px 20px 10px 25px;
-        font-family:sans-serif, serif;
-        color: #8d8d8d;
-        font-size: 15px;
-        font-weight: lighter;
-        overflow: hidden;
-        align-self: center;
-      }
-    
-    span {
-        align-self: center;
-        height: 50px;
-        font-family: 'Suranna', serif;
-        font-size: 34px;
-      }
-    
-      .btnbuy4 {
-        height: 103px;
-        width: 327px;
-        margin-top: 1px;
-        position: relative;
-        align-self: center;
-      }
-      
-      span {
-        display: inline-block;
-        height: 50px;
-        font-family: 'Suranna', serif;
-        font-size: 34px;
-      }
-      
-      .btnbuy4 button {
-        float: right;
-        display: inline-block;
-        height: 50px;
-        width: 176px;
-        margin: 0 40px 0 16px;
-        box-sizing: border-box;
-        border: transparent;
-        border-radius: 60px;
-        font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-        font-size: 16px;
-        font-weight: 900;
-        text-transform: uppercase;
-        letter-spacing: 0.2em;
-        color: #ffffff;
-        background-color: #311bf7;
-      }  
       .infantil {
         font-family: 'Roboto Slab', serif;
         font-weight: 900;
