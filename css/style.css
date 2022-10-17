@@ -7,13 +7,43 @@
 /*--HEADER--*/
 
 header {
-    background-color: #112D4E;
-    
+
 }
 
 header nav ul { 
-    list-style:none;
+
    font-family: 'Roboto Slab', serif;
+   display: flex;
+	position: relative;
+	flex-direction: row;
+	flex-wrap: nowrap;
+	align-items: center;
+	justify-content: space-between;
+	margin: auto;
+	width: 90%;
+	height: 80px;
+	border-radius: 0 0 15px 15px;
+	padding: 0 25px;
+	z-index: 2;
+	background:#112D4E;
+  font-weight: 600;
+	font-size: 18px;
+	list-style: none;
+  box-shadow: 1px 1px 5px 0px var(--gray);
+  position: sticky;
+
+}
+
+
+header nav ul .logocontainer{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+  
+}
+
+header nav ul .logocontainer img{
+  max-height: 60px;
 }
 
 header nav ul li { 
@@ -30,8 +60,6 @@ header nav ul li a {
     text-decoration: none;
     color: white;
 }
-
-
 
 /*MAIN BODY*/
 
@@ -835,8 +863,17 @@ span {
         box-shadow: 0 15px 35px rgba(0, 0, 0, 0.5);
         border-radius: 7px 7px 7px 7px;
         background-color: white;
-        justify-items: center;
-    }
+        transition: 1s ease;
+      }
+      
+      .card1:hover,.card2:hover,.card3:hover,.card4:hover {
+          -webkit-transform: rotateZ(-2deg)scale(1.1);
+          -ms-transform: rotateZ(-2deg)scale(1.1);
+          transform: rotateZ(-2deg)scale(1.1);
+          transition: 1s ease;
+      
+      }
+
     .card1 img,.card2 img,.card3 img,.card4 img{
         height: auto;
         max-width: 350px;
