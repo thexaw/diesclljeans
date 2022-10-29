@@ -3,6 +3,10 @@
   margin: 0;
   padding: 0; }
 
+header nav ul li, body .lmv, body .acercade h2, .encuentranos {
+  color: white;
+  text-align: center; }
+
 /*--HEADER--*/
 header nav ul {
   font-family: 'Roboto Slab', serif;
@@ -27,8 +31,6 @@ header nav ul {
     list-style: none;
     font-family: 'Roboto Slab', serif;
     display: inline-block;
-    color: white;
-    text-align: center;
     padding: 14px 16px;
     text-decoration: none; }
     header nav ul li a {
@@ -117,9 +119,7 @@ body {
     padding-top: 35px;
     padding-bottom: 35px;
     background-color: #3F72AF;
-    font-family: 'Roboto Slab', serif;
-    text-align: center;
-    color: white; }
+    font-family: 'Roboto Slab', serif; }
     body .lmv h2 {
       text-size-adjust: 200%;
       padding: 35px;
@@ -162,13 +162,11 @@ body {
     font-family: 'Roboto Slab', serif;
     color: white; }
     body .acercade h2 {
-      color: white;
-      text-align: center;
       padding: 20px;
       padding-bottom: 30px; }
     body .acercade h3 {
-      padding: 20px;
       text-align: justify;
+      padding: 20px;
       padding: bottom 30px; }
 
 /*--GRID INDEX--*/
@@ -745,9 +743,7 @@ footer {
   padding-bottom: 35px;
   background-color: #3F72AF;
   font-family: 'Roboto Slab', serif;
-  text-align: center;
-  align-items: center;
-  color: white; }
+  align-items: center; }
   .encuentranos .map {
     overflow: hidden;
     padding-bottom: 50.25%;
@@ -767,8 +763,6 @@ footer {
   align-items: center;
   text-align: center; }
   .contacto h1 {
-    text-align: center;
-    color: white;
     padding-top: 35px; }
   .contacto form {
     display: block;
