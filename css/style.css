@@ -46,7 +46,7 @@ header nav ul .logocontainer img{
 }
 
 header nav ul li { 
-    list-style:none;
+  list-style:none;
    font-family: 'Roboto Slab', serif;
    display: inline-block;
    color: white;
@@ -514,12 +514,6 @@ span {
     position: relative;
   }
   
-  span {
-    display: inline-block;
-    height: 50px;
-    font-family: 'Suranna', serif;
-    font-size: 34px;
-  }
   
   .btnbuy button {
     float: right;
@@ -735,12 +729,6 @@ span {
     font-size: 34px;
   }
 
-  .btnbuy {
-    height: 103px;
-    width: 327px;
-    margin-top: 1px;
-    position: relative;
-  }
   
   span {
     display: inline-block;
@@ -984,12 +972,6 @@ span {
         align-self: center;
       }
     
-    span {
-        align-self: center;
-        height: 50px;
-        font-family: 'Suranna', serif;
-        font-size: 34px;
-      }
     
       .btnbuy1,.btnbuy2,.btnbuy3,.btnbuy4 {
         height: 103px;
