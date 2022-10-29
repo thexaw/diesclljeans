@@ -6,14 +6,10 @@
 
 /*--HEADER--*/
 
-header {
-
-}
-
 header nav ul { 
 
-   font-family: 'Roboto Slab', serif;
-   display: flex;
+  font-family: 'Roboto Slab', serif;
+  display: flex;
 	position: relative;
 	flex-direction: row;
 	flex-wrap: nowrap;
@@ -516,7 +512,7 @@ span {
   
   
   .btnbuy button {
-    float: right;
+    float: none;
     display: inline-block;
     height: 50px;
     width: 176px;
@@ -738,7 +734,7 @@ span {
   }
   
   .mbtnbuy button {
-    float: left;
+    float: none;
     display: inline-block;
     height: 50px;
     width: 176px;
@@ -879,7 +875,7 @@ span {
   }
   
   .btnbuy1 button,.btnbuy2 button,.btnbuy3 button,.btnbuy4 button  {
-    float: right;
+    float: none;
     display: inline-block;
     height: 50px;
     width: 176px;
@@ -989,7 +985,7 @@ span {
       }
       
       .btnbuy1 button,.btnbuy2 button,.btnbuy3 button,.btnbuy4 button {
-        float: right;
+        float: none;
         display: inline-block;
         height: 50px;
         width: 176px;
